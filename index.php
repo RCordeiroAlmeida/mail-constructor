@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Tasca - Pedidos</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <!-- Scripts do Bootstrap (opcional, mas recomendado para funcionalidades adicionais) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
 </head>
 <body>
 
@@ -21,11 +29,11 @@
 
 <form role="form" action="processa_usuario.php" id="MyForm" method="post" enctype="multipart/form-data" name="MyForm">
     <div class="wrapper wrapper-content animated fadeInRight">
-        <div class="ibox float-e-margins">
+        <div class="ibox float-e-margins" style="padding: 5%">
 
             <div class="form-data">
                 <div class="row form-group">
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                         <label class="control-label" for="con_nome">Nome Completo</label>
                         <input name="con_nome" type="text" class="form-control blockenter" id="con_nome" style="text-transform:uppercase;" required/>
                     </div>
@@ -35,12 +43,12 @@
                     </div>
                     <div class="col-sm-4">
                         <label class="control-label" for="con_telefone">Telefone</label>
-                        <input name="con_telefone" type="text" class="form-control blockenter" id="con_telefone" style="text-transform:uppercase;" required/>
+                        <input name="con_telefone" type="text" class="form-control blockenter" id="con_telefone"     required/>
                     </div>
                 </div>
 
                 <div class="row form-group">
-                    <div class="col-sm-3">
+                    <div class="col-sm-4">
                     <label>Selecione seu estado</label>
                     <select name="con_uf" id="con_uf" data-reqmsg="Selecione seu estado" class="form-control blockenter">
 		                <option value="" selected disabled>SELECIONE</option>
@@ -62,11 +70,11 @@
                             <option value="Quatro Estações Imbatível">Quatro Estações Imbatível</option>
                             <option value="Quatro Estações Primavera">Quatro Estações Primavera</option>
                             <option value="Quatro Estações Shopping">Quatro Estações Shopping</option>
-                            <option value="TNT Nitros Química">TNT Nitros Química</option><option value="Vitória Régia">Vitória Régia</option>	</select>
+                            <option value="TNT Nitros Química">TNT Nitros Química</option><option value="Vitória Régia">Vitória Régia</option>
+                        </select>
                     </div>
-                    <div class="col-sm-4" style="margin-top:25px">
-                        <button class="btn btn-primary" type="submit"> Salvar</button>
-                        <button class="btn btn-default" onclick="voltar();" type="button"><i class="fa fa-times"></i><span class="hidden-xs hidden-sm"> Cancelar</span></button>
+                    <div class="col-sm-4" style="margin-top:32px">
+                        <button class="btn btn-info" type="submit"> Salvar</button>
                     </div>
                 </div>
             </div>
@@ -75,12 +83,11 @@
 </form>
 
     <script>
-        $(document).ready(function(){
-            $('#con_telefone').inputmask('(99) 9999-9999'); // Exemplo de máscara para telefone
+        $(document).ready(function() {
+            // Aplica a máscara ao campo de telefone
+            $('#con_telefone').mask('(00) 00009-0000');
         });
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

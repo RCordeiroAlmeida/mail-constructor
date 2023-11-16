@@ -1,0 +1,9 @@
+
+/* Adicione a classe 'sticky-header' ao seu cabeçalho */
+.cabecalho {
+    position: sticky;
+    top: 0; /* Ajuste esta propriedade conforme necessário para a altura do seu cabeçalho */
+    z-index: 100; /* Garante que o cabeçalho fica sobre outros elementos */
+    background-color: #ffffff; /* Ajuste a cor de fundo conforme necessário */
+    border-bottom: 1px solid #e0e0e0; /* Adicione uma borda inferior para separar do conteúdo */
+}
