@@ -6,4 +6,12 @@
     z-index: 100; /* Garante que o cabeçalho fica sobre outros elementos */
     background-color: #ffffff; /* Ajuste a cor de fundo conforme necessário */
     border-bottom: 1px solid #e0e0e0; /* Adicione uma borda inferior para separar do conteúdo */
+    padding-left: 5%;
+    padding-top: 2%;
+
+}
+
+.cabecalho-btn{
+    float: right;
+    margin-top: 5px;
 }

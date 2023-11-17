@@ -27,7 +27,7 @@
 </div>
 <div id="result_var"></div>
 
-<form role="form" action="processa_usuario.php" id="MyForm" method="post" enctype="multipart/form-data" name="MyForm">
+<form role="form" action="compras.php" id="MyForm" method="post" enctype="multipart/form-data" name="MyForm">
     <div class="wrapper wrapper-content animated fadeInRight">
         <div class="ibox float-e-margins" style="padding: 5%">
 
@@ -50,7 +50,7 @@
                 <div class="row form-group">
                     <div class="col-sm-4">
                     <label>Selecione seu estado</label>
-                    <select name="con_uf" id="con_uf" data-reqmsg="Selecione seu estado" class="form-control blockenter">
+                    <select name="con_uf" id="con_uf" data-reqmsg="Selecione seu estado" class="form-control blockenter" required>
 		                <option value="" selected disabled>SELECIONE</option>
                         <option value="PR - Paraná">PR - Paraná</option>
                         <option value="SC - Santa Catarina">SC - Santa Catarina</option>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="col-sm-4">
                         <label for="con_catalogo">Selecione o catálogo</label>
-                        <select name="con_catalogo" id="con_catalogo" class="form-control" aria-invalid="false">
+                        <select name="con_catalogo" id="con_catalogo" class="form-control" aria-invalid="false" required>
 		                    <option value="" selected disabled>SELECIONE</option>
                             <option value="Abelha Rainha Cosméticos">Abelha Rainha Cosméticos</option>
                             <option value="Demillus">Demillus</option><option value="Doce Sensação">Doce Sensação</option>
