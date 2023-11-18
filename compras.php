@@ -236,7 +236,7 @@
         function totalFinal() {
             totalGeral = 0;
 
-            for (var i = 0; i < qtdItems; i++) {
+            for (var i = 0; i <= qtdItems; i++) {
                 var totParc = document.getElementById('ped_total_' + i).valueAsNumber || 0;
 
                 // Verifica se o valor é um número válido antes de somar
